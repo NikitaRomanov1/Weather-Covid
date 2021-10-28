@@ -1,5 +1,5 @@
 
-# Create with ReactJS, styled-components, redux-thunk and recharts
+# Create with ReactJS, styled-components, redux and recharts
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
