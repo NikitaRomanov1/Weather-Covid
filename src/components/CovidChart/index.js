@@ -24,7 +24,7 @@ const CovidChart = ({ covidData }) => {
           alignItems: "center",
         }}
       >
-        <h2>Статистика заболевших COVID-19 за последний месяц</h2>
+        <h2>Статистика заболевших COVID-19 за последний месяц в России</h2>
       </div>
       <div
         style={{
