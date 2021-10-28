@@ -11,7 +11,7 @@ export const fetchWeather = (city) => {
       dispatch({ type: FETCH_WEATHER });
       const response = await axios.get(
         //`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&lang=ru&appid=${process.env.REACT_APP_API_KEY}`
-        `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&lang=ru&appid=${REACT_APP_API_KEY}`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&lang=ru&appid=${REACT_APP_API_KEY}`
       );
       dispatch({
         type: FETCH_WEATHER_SUCCESS,

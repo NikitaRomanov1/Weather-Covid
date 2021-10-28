@@ -15,14 +15,15 @@ export const Home = () => {
   let today = moment().format("YYYY-MM-DD");
   //дата месяц назад
   let monthAgo = moment().subtract(30, "days").format("YYYY-MM-DD");
-
+  console.log("Сегодня:", today);
   const { fetchWeather, fetchCovid } = useActions();
   //запрос по обновлению страницы на погоду в городе, и ковид статистика за месяц
   useEffect(() => {
     fetchWeather("Москва");
     fetchCovid(monthAgo, today);
   }, []);
-
+  console.log(covidData);
+  console.log(monthAgo);
   return (
     <div>
       <div>
