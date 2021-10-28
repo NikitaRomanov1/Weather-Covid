@@ -1,7 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
-
+import { css } from "styled-components";
 export const Global = createGlobalStyle`
+    @font-face { 
+         font-family: 'OpenSans';  
+         src:url('../assets/fonts/OpenSans/OpenSans-Medium.ttf'),        
+        }
     * {
         box-sizing: border-box;
         margin: 0;
@@ -13,4 +17,7 @@ export const Global = createGlobalStyle`
     h2 {
         color: ${theme.colors.darkBlue}
     }
-`;
+   body {
+       font-family: "OpenSans", sans-serif;
+   }
+    `;

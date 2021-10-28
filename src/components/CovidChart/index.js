@@ -44,7 +44,10 @@ const CovidChart = ({ covidData }) => {
               tickFormatter={(time) => moment(time).format("DD/MM")}
               type="category"
             />
-            <YAxis interval="preserveStart"></YAxis>
+            <YAxis
+              interval="preserveStart"
+              tickFormatter={(tick) => `${tick / 10000} т.`}
+            ></YAxis>
             <Tooltip
               labelFormatter={(time) => moment(time).format("DD/MM/YY")}
             />
