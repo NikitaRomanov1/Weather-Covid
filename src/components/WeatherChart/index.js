@@ -36,7 +36,7 @@ const WeatherChart = ({ data }) => {
           alignItems: "center",
         }}
       >
-        <ResponsiveContainer width="80%" aspect={6}>
+        <ResponsiveContainer width="85%" height={350}>
           <LineChart
             data={data.list}
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
@@ -44,7 +44,6 @@ const WeatherChart = ({ data }) => {
             <CartesianGrid horizontal="true" vertical="" />
             <XAxis
               dataKey="dt_txt"
-              interval={1}
               tickFormatter={(time) => moment(time).format("DD/MM")}
             />
             <YAxis>

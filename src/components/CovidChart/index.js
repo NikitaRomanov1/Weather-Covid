@@ -35,8 +35,8 @@ const CovidChart = ({ covidData }) => {
           alignItems: "center",
         }}
       >
-        <ResponsiveContainer width="80%" aspect={5}>
-          <BarChart width={730} height={250} data={covidData}>
+        <ResponsiveContainer width="80%" height={350}>
+          <BarChart data={covidData}>
             <CartesianGrid />
             <XAxis
               dataKey={"Date"}
