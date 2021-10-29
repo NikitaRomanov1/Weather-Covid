@@ -49,6 +49,7 @@ const CovidChart = ({ covidData }) => {
               tickFormatter={(tick) => `${tick / 10000} т.`}
             ></YAxis>
             <Tooltip
+              wrapperStyle={{ left: -110 }}
               labelFormatter={(time) => moment(time).format("DD/MM/YY")}
             />
             <Legend />

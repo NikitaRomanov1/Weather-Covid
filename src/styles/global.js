@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
-import { css } from "styled-components";
 export const Global = createGlobalStyle`
     @font-face { 
          font-family: 'OpenSans';  
@@ -8,7 +7,7 @@ export const Global = createGlobalStyle`
         }
     * {
         box-sizing: border-box;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
     }
     h1 {
